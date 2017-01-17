@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title> MSV HOLDINGS </title>
+</head>
+<body>
+	{% extends 'story/base.html' %}
+	{% block content %}
+	<ul>
+	{% for line in lines %}
+<!-- 	{{ hello }} -->
+	<li style= "color:{% cycle 'red' 'blue' 'green' 'yellow' 'cyan' 'magenta' %}"> {{ line.text}} </li>
+	{% endfor %}
+	</ul>
+	{% endblock %}
+</body>
+</html>
